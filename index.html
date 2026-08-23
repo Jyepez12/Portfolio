@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josue Yepez | Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #1f2937;
+      text-align: center;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 50px 20px 30px;
+    }
+
+    .profile-picture {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #2563eb;
+    }
+
+    h1 {
+      margin: 15px 0 8px;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      min-height: 200px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      text-align: left;
+    }
+
+    .card h2 {
+      color: #2563eb;
+      margin-top: 0;
+    }
+
+    .card a {
+      color: #2563eb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="images/profile.jpg" alt="Photo of Josue Yepez" class="profile-picture">
+    <h1>Josue Yepez</h1>
+    <p class="intro">
+      I am a Mechatronics Engineering student interested in automation,
+      manufacturing, 3D printing, electronics, and mechanical design.
+    </p>
+  </header>
+
+  <section class="categories">
+    <div class="card">
+      <h2>Skills</h2>
+      <p>SolidWorks, 3D Printing, Arduino, PLCs, MATLAB, Python, and manufacturing processes.</p>
+      <a href="skills.html">View skills →</a>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <p>Explore my engineering projects, including additive plastics, automation, and design work.</p>
+      <a href="projects.html">View projects →</a>
+    </div>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Learn more about my engineering background, interests, and career goals.</p>
+      <a href="about.html">Learn more →</a>
+    </div>
+  </section>
+</body>
+</html>
