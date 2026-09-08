@@ -1,4 +1,6 @@
-/* General website styling */
+/* =========================
+   GENERAL WEBSITE
+   ========================= */
 
 body {
   font-family: Arial, sans-serif;
@@ -8,7 +10,9 @@ body {
 }
 
 
-/* Navigation bar */
+/* =========================
+   NAVIGATION BAR
+   ========================= */
 
 nav {
   background: #1f2937;
@@ -28,7 +32,9 @@ nav a:hover {
 }
 
 
-/* Header */
+/* =========================
+   HOMEPAGE HEADER
+   ========================= */
 
 header {
   background: white;
@@ -37,30 +43,56 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 100px;
 }
+
+
+/* This controls the name and introduction */
+
+.hero-text {
+  max-width: 750px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+
+/* This controls your introduction paragraph */
+
+.intro {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   PROFILE PICTURE
+   ========================= */
 
 .profile-picture {
   width: 280px;
   height: 280px;
+
   object-fit: cover;
+
+  /* Makes the picture square */
   border-radius: 0;
-  border: 2px solid black;
-}
 
-h1 {
-  margin: 15px 0 8px;
-}
+  /* Removes the blue border */
+  border: none;
 
-.intro {
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-  font-size: 18px;
+  /* Rotates your sideways picture clockwise */
+  transform: rotate(90deg);
 }
 
 
-/* Main content */
+/* =========================
+   MAIN CONTENT
+   ========================= */
 
 main {
   max-width: 1000px;
@@ -69,30 +101,42 @@ main {
 }
 
 
-/* Homepage cards */
+/* =========================
+   HOMEPAGE CARDS
+   ========================= */
 
 .categories {
   display: flex;
   justify-content: center;
   gap: 25px;
+
   padding: 40px 20px;
+
   flex-wrap: wrap;
 }
 
+
 .card {
   background: white;
+
   width: 280px;
   min-height: 200px;
+
   padding: 25px;
+
   border-radius: 12px;
+
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
   text-align: left;
 }
+
 
 .card h2 {
   color: #2563eb;
   margin-top: 0;
 }
+
 
 .card a {
   color: #2563eb;
@@ -100,21 +144,29 @@ main {
   text-decoration: none;
 }
 
+
 .card a:hover {
   text-decoration: underline;
 }
 
 
-/* Skills and project boxes */
+/* =========================
+   SKILLS & PROJECTS
+   ========================= */
 
 .skill,
 .project {
   background: white;
+
   padding: 25px;
+
   margin-bottom: 25px;
+
   border-radius: 12px;
+
   box-shadow: 0 4px 12px rgba(0,0,0,0.10);
 }
+
 
 .skill h2,
 .project h2 {
@@ -122,7 +174,7 @@ main {
 }
 
 
-/* Images inside projects */
+/* Project images */
 
 .project img {
   max-width: 100%;
@@ -130,7 +182,9 @@ main {
 }
 
 
-/* General links */
+/* =========================
+   LINKS
+   ========================= */
 
 main a {
   color: #2563eb;
@@ -138,12 +192,39 @@ main a {
   text-decoration: none;
 }
 
+
 main a:hover {
   text-decoration: underline;
 }
 
 
-/* Make website work better on phones */
+/* =========================
+   MOBILE PHONES
+   ========================= */
+
+@media (max-width: 800px) {
+
+  header {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .profile-picture {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .intro {
+    font-size: 18px;
+  }
+
+}
+
 
 @media (max-width: 600px) {
 
