@@ -85,8 +85,6 @@ header {
   /* Removes the blue border */
   border: none;
 
-  /* Rotates your sideways picture clockwise */
-  transform: rotate(90deg);
 }
 
 
