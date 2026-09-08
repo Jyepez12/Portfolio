@@ -74,8 +74,8 @@ header {
    ========================= */
 
 .profile-picture {
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 320px;
 
   object-fit: contain;
 
